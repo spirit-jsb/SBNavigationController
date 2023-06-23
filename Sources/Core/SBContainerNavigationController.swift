@@ -116,9 +116,7 @@ public class SBContainerNavigationController: UINavigationController {
 
             self.navigationBar.isTranslucent = self.navigationController!.navigationBar.isTranslucent
 
-            if #available(iOS 11.0, *) {
-                self.navigationBar.prefersLargeTitles = self.navigationController!.navigationBar.prefersLargeTitles
-            }
+            self.navigationBar.prefersLargeTitles = self.navigationController!.navigationBar.prefersLargeTitles
 
             self.navigationBar.tintColor = self.navigationController!.navigationBar.tintColor
             self.navigationBar.barTintColor = self.navigationController!.navigationBar.barTintColor
@@ -128,9 +126,7 @@ public class SBContainerNavigationController: UINavigationController {
             self.navigationBar.shadowImage = self.navigationController!.navigationBar.shadowImage
 
             self.navigationBar.titleTextAttributes = self.navigationController!.navigationBar.titleTextAttributes
-            if #available(iOS 11.0, *) {
-                self.navigationBar.largeTitleTextAttributes = self.navigationController!.navigationBar.largeTitleTextAttributes
-            }
+            self.navigationBar.largeTitleTextAttributes = self.navigationController!.navigationBar.largeTitleTextAttributes
 
             self.navigationBar.setTitleVerticalPositionAdjustment(self.navigationController!.navigationBar.titleVerticalPositionAdjustment(for: .default), for: .default)
 
