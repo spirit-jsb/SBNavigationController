@@ -9,6 +9,11 @@
 
 import UIKit
 
-open class SBNavigationController: UINavigationController {}
+open class SBNavigationController: UINavigationController {
+    var useRootNavigationBarAttributes: Bool = false
+    var actualViewControllers: [UIViewController] = []
+
+    func setBackBarButtonItem(on viewController: UIViewController?) {}
+}
 
 #endif
