@@ -41,6 +41,16 @@ public extension SpiritWrapper where Base: UIViewController {
             setAssociatedObject(self.base, &disablesInteractivePopKey, newValue)
         }
     }
+
+    var navigationController: SBNavigationController? {
+        var viewController: UIViewController? = self.base
+
+        while viewController != nil && !(viewController is SBNavigationController) {
+            viewController = viewController!.navigationController
+        }
+
+        return viewController as? SBNavigationController
+    }
 }
 
 #endif
