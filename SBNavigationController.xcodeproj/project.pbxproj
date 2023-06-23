@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		505DA6562A45D443004C43D8 /* SBNavigationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505DA64D2A45D442004C43D8 /* SBNavigationController.framework */; };
 		505DA6672A45D623004C43D8 /* SBNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6652A45D620004C43D8 /* SBNavigationControllerTests.swift */; };
+		505DA6A62A45DB98004C43D8 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6A52A45DB98004C43D8 /* Runtime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,7 @@
 		505DA64D2A45D442004C43D8 /* SBNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		505DA6552A45D443004C43D8 /* SBNavigationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBNavigationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505DA6652A45D620004C43D8 /* SBNavigationControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBNavigationControllerTests.swift; path = Tests/SBNavigationControllerTests.swift; sourceTree = "<group>"; };
+		505DA6A52A45DB98004C43D8 /* Runtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runtime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		505DA64F2A45D442004C43D8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				505DA6A42A45DB4D004C43D8 /* Utility */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -77,6 +80,14 @@
 				505DA6652A45D620004C43D8 /* SBNavigationControllerTests.swift */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		505DA6A42A45DB4D004C43D8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				505DA6A52A45DB98004C43D8 /* Runtime.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505DA6A62A45DB98004C43D8 /* Runtime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
