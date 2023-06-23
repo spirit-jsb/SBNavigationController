@@ -12,6 +12,7 @@
 		505DA6A62A45DB98004C43D8 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6A52A45DB98004C43D8 /* Runtime.swift */; };
 		505DA6A82A45DE12004C43D8 /* Spirit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6A72A45DE12004C43D8 /* Spirit.swift */; };
 		505DA6AA2A45DFF9004C43D8 /* SBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6A92A45DFF9004C43D8 /* SBNavigationController.swift */; };
+		505DA6AF2A45EC56004C43D8 /* UIViewController+Spirit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6AE2A45EC56004C43D8 /* UIViewController+Spirit.swift */; };
 		505DA6B12A45EDC9004C43D8 /* SBContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6B02A45EDC9004C43D8 /* SBContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		505DA6A52A45DB98004C43D8 /* Runtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runtime.swift; sourceTree = "<group>"; };
 		505DA6A72A45DE12004C43D8 /* Spirit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spirit.swift; sourceTree = "<group>"; };
 		505DA6A92A45DFF9004C43D8 /* SBNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBNavigationController.swift; sourceTree = "<group>"; };
+		505DA6AE2A45EC56004C43D8 /* UIViewController+Spirit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Spirit.swift"; sourceTree = "<group>"; };
 		505DA6B02A45EDC9004C43D8 /* SBContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				505DA6A32A45DA08004C43D8 /* Core */,
+				505DA6AD2A45EC2C004C43D8 /* Extensions */,
 				505DA6A42A45DB4D004C43D8 /* Utility */,
 			);
 			path = Sources;
@@ -105,6 +108,14 @@
 				505DA6A52A45DB98004C43D8 /* Runtime.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		505DA6AD2A45EC2C004C43D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				505DA6AE2A45EC56004C43D8 /* UIViewController+Spirit.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				505DA6AA2A45DFF9004C43D8 /* SBNavigationController.swift in Sources */,
+				505DA6AF2A45EC56004C43D8 /* UIViewController+Spirit.swift in Sources */,
 				505DA6A82A45DE12004C43D8 /* Spirit.swift in Sources */,
 				505DA6A62A45DB98004C43D8 /* Runtime.swift in Sources */,
 				505DA6B12A45EDC9004C43D8 /* SBContainerViewController.swift in Sources */,
