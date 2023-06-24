@@ -53,32 +53,25 @@ public class SBContainerNavigationController: UINavigationController {
         return containsHidesBottomBarWhenPushed ? nil : tabBarController
     }
 
-    override public var preferredStatusBarStyle: UIStatusBarStyle {
-        return self.topViewController?.preferredStatusBarStyle ?? super.preferredStatusBarStyle
+    override public var childForStatusBarStyle: UIViewController? {
+        return self.topViewController
     }
 
-    override public var prefersStatusBarHidden: Bool {
-        return self.topViewController?.prefersStatusBarHidden ?? super.prefersStatusBarHidden
-    }
-
-    override public var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
-        return self.topViewController?.preferredStatusBarUpdateAnimation ?? super.preferredStatusBarUpdateAnimation
+    override public var childForStatusBarHidden: UIViewController? {
+        return self.topViewController
     }
 
     override public var childForScreenEdgesDeferringSystemGestures: UIViewController? {
         return self.topViewController
     }
 
-    override public var preferredScreenEdgesDeferringSystemGestures: UIRectEdge {
-        return self.topViewController?.preferredScreenEdgesDeferringSystemGestures ?? super.preferredScreenEdgesDeferringSystemGestures
-    }
-
     override public var childForHomeIndicatorAutoHidden: UIViewController? {
         return self.topViewController
     }
 
-    override public var prefersHomeIndicatorAutoHidden: Bool {
-        return self.topViewController?.prefersHomeIndicatorAutoHidden ?? super.prefersHomeIndicatorAutoHidden
+    @available(iOS 14.0, *)
+    override public var childViewControllerForPointerLock: UIViewController? {
+        return self.topViewController
     }
 
     override public init(navigationBarClass: AnyClass?, toolbarClass: AnyClass?) {
@@ -146,8 +139,8 @@ public class SBContainerNavigationController: UINavigationController {
         }
     }
 
-    override public func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    override public func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
 
         if self.topViewController?.sb.disablesInteractivePop == nil {
             self.topViewController?.sb.disablesInteractivePop = self.isNavigationBarHidden || self.topViewController?.navigationItem.leftBarButtonItem != nil
