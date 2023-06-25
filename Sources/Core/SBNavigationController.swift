@@ -109,10 +109,7 @@ open class SBNavigationController: UINavigationController {
     }
 
     override public func responds(to aSelector: Selector!) -> Bool {
-        guard let delegate = self._delegate else {
-            return false
-        }
-        return super.responds(to: aSelector) ? true : delegate.responds(to: aSelector)
+        return super.responds(to: aSelector) ? true : self._delegate != nil ? self._delegate!.responds(to: aSelector) : false
     }
 
     override public func forwardingTarget(for aSelector: Selector!) -> Any? {
