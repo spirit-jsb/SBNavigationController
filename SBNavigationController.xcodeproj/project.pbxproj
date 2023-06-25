@@ -15,6 +15,7 @@
 		505DA6AC2A45E148004C43D8 /* SBContainerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6AB2A45E148004C43D8 /* SBContainerNavigationController.swift */; };
 		505DA6AF2A45EC56004C43D8 /* UIViewController+Spirit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6AE2A45EC56004C43D8 /* UIViewController+Spirit.swift */; };
 		505DA6B12A45EDC9004C43D8 /* SBContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6B02A45EDC9004C43D8 /* SBContainerViewController.swift */; };
+		505DA6B32A47E14C004C43D8 /* Array+Spirit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6B22A47E14C004C43D8 /* Array+Spirit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		505DA6AB2A45E148004C43D8 /* SBContainerNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBContainerNavigationController.swift; sourceTree = "<group>"; };
 		505DA6AE2A45EC56004C43D8 /* UIViewController+Spirit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Spirit.swift"; sourceTree = "<group>"; };
 		505DA6B02A45EDC9004C43D8 /* SBContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBContainerViewController.swift; sourceTree = "<group>"; };
+		505DA6B22A47E14C004C43D8 /* Array+Spirit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Spirit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		505DA6AD2A45EC2C004C43D8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				505DA6B22A47E14C004C43D8 /* Array+Spirit.swift */,
 				505DA6AE2A45EC56004C43D8 /* UIViewController+Spirit.swift */,
 			);
 			path = Extensions;
@@ -233,6 +236,7 @@
 				505DA6AC2A45E148004C43D8 /* SBContainerNavigationController.swift in Sources */,
 				505DA6AA2A45DFF9004C43D8 /* SBNavigationController.swift in Sources */,
 				505DA6AF2A45EC56004C43D8 /* UIViewController+Spirit.swift in Sources */,
+				505DA6B32A47E14C004C43D8 /* Array+Spirit.swift in Sources */,
 				505DA6A82A45DE12004C43D8 /* Spirit.swift in Sources */,
 				505DA6A62A45DB98004C43D8 /* Runtime.swift in Sources */,
 				505DA6B12A45EDC9004C43D8 /* SBContainerViewController.swift in Sources */,
