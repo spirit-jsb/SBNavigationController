@@ -103,9 +103,13 @@ open class SBNavigationController: UINavigationController {
 
         super.delegate = self
 
-        super.setNavigationBarHidden(true, animated: false)
-
         self.view.backgroundColor = UIColor.white
+    }
+
+    override public func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        super.setNavigationBarHidden(true, animated: animated)
     }
 
     override public func responds(to aSelector: Selector!) -> Bool {
@@ -265,14 +269,14 @@ open class SBNavigationController: UINavigationController {
         super.setViewControllers(viewControllers, animated: animated)
     }
 
-    func setBackBarButtonItem(on viewController: UIViewController?) {
+    func setLeftBarButtonItem(on viewController: UIViewController?) {
         let viewControllers = self.viewControllers
 
-        if !self.useSystemBackBarButtonItem, viewController != SBUnwrapViewController(viewControllers.first), viewController?.navigationItem.backBarButtonItem == nil {
+        if !self.useSystemBackBarButtonItem, viewController != SBUnwrapViewController(viewControllers.first), viewController?.navigationItem.leftBarButtonItem == nil {
             if viewController is CustomizableBackBarButtonItem {
-                viewController?.navigationItem.backBarButtonItem = (viewController as! CustomizableBackBarButtonItem).customizableBackBarButtonItem(self, action: #selector(self.triggerBack(_:)))
+                viewController?.navigationItem.leftBarButtonItem = (viewController as! CustomizableBackBarButtonItem).customizableBackBarButtonItem(self, action: #selector(self.triggerBack(_:)))
             } else {
-                viewController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Back", comment: ""), style: .plain, target: self, action: #selector(self.triggerBack(_:)))
+                viewController?.navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Back", comment: ""), style: .plain, target: self, action: #selector(self.triggerBack(_:)))
             }
         }
     }
@@ -304,7 +308,7 @@ extension SBNavigationController: UINavigationControllerDelegate {
         let actualViewController = SBUnwrapViewController(viewController)!
 
         if viewController != navigationController.viewControllers.first, actualViewController.isViewLoaded {
-            self.setBackBarButtonItem(on: actualViewController)
+            self.setLeftBarButtonItem(on: actualViewController)
         }
 
         if let disablesInteractivePop = actualViewController.sb.disablesInteractivePop, disablesInteractivePop {

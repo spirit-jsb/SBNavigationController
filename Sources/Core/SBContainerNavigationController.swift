@@ -139,15 +139,15 @@ public class SBContainerNavigationController: UINavigationController {
         }
     }
 
-    override public func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+    override public func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
         if self.topViewController?.sb.disablesInteractivePop == nil {
             self.topViewController?.sb.disablesInteractivePop = self.isNavigationBarHidden || self.topViewController?.navigationItem.leftBarButtonItem != nil
         }
 
         if self.parent is SBContainerViewController, self.parent?.parent is SBNavigationController {
-            self.sb.navigationController?.setBackBarButtonItem(on: self.topViewController)
+            self.sb.navigationController?.setLeftBarButtonItem(on: self.topViewController)
         }
     }
 
