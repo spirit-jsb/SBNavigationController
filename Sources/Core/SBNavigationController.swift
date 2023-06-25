@@ -31,8 +31,10 @@ open class SBNavigationController: UINavigationController {
     public typealias CompletionCallback = (Bool) -> Void
 
     /// 是否使用系统原生样式的返回按钮，默认值为 `false`
+    @IBInspectable
     public var useSystemBackBarButtonItem: Bool = false
     /// 是否使用 `root navigation bar` 的样式，默认值为 `false`
+    @IBInspectable
     public var useRootNavigationBarAttributes: Bool = false
 
     public var actualTopViewController: UIViewController? {
