@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		505DA6BE2A484155004C43D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6B52A484155004C43D8 /* ViewController.swift */; };
 		505DA6BF2A484155004C43D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505DA6B62A484155004C43D8 /* Assets.xcassets */; };
 		505DA6C02A484155004C43D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505DA6B72A484155004C43D8 /* LaunchScreen.storyboard */; };
 		505DA6C12A484155004C43D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505DA6B92A484155004C43D8 /* Main.storyboard */; };
@@ -17,7 +16,6 @@
 
 /* Begin PBXFileReference section */
 		505DA6712A45D657004C43D8 /* SBNavigationController-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SBNavigationController-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		505DA6B52A484155004C43D8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		505DA6B62A484155004C43D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		505DA6B82A484155004C43D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505DA6BA2A484155004C43D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			children = (
 				505DA6BB2A484155004C43D8 /* AppDelegate.swift */,
 				505DA6BD2A484155004C43D8 /* SceneDelegate.swift */,
-				505DA6B52A484155004C43D8 /* ViewController.swift */,
 				505DA6B62A484155004C43D8 /* Assets.xcassets */,
 				505DA6BC2A484155004C43D8 /* Info.plist */,
 				505DA6B72A484155004C43D8 /* LaunchScreen.storyboard */,
@@ -149,7 +146,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				505DA6C22A484155004C43D8 /* AppDelegate.swift in Sources */,
-				505DA6BE2A484155004C43D8 /* ViewController.swift in Sources */,
 				505DA6C42A484155004C43D8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
