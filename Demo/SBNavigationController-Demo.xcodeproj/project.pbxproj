@@ -9,19 +9,43 @@
 /* Begin PBXBuildFile section */
 		505DA6BF2A484155004C43D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505DA6B62A484155004C43D8 /* Assets.xcassets */; };
 		505DA6C02A484155004C43D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505DA6B72A484155004C43D8 /* LaunchScreen.storyboard */; };
-		505DA6C12A484155004C43D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505DA6B92A484155004C43D8 /* Main.storyboard */; };
 		505DA6C22A484155004C43D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6BB2A484155004C43D8 /* AppDelegate.swift */; };
 		505DA6C42A484155004C43D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6BD2A484155004C43D8 /* SceneDelegate.swift */; };
+		505DA6D12A484234004C43D8 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6C62A484234004C43D8 /* BasicViewController.swift */; };
+		505DA6D22A484234004C43D8 /* HideNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6C72A484234004C43D8 /* HideNavigationBarViewController.swift */; };
+		505DA6D32A484234004C43D8 /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6C82A484234004C43D8 /* BasicTableViewController.swift */; };
+		505DA6D42A484234004C43D8 /* BasicBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6C92A484234004C43D8 /* BasicBrowserViewController.swift */; };
+		505DA6D52A484234004C43D8 /* DisableInteractivePopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6CA2A484234004C43D8 /* DisableInteractivePopViewController.swift */; };
+		505DA6D62A484234004C43D8 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6CB2A484234004C43D8 /* BasicCollectionViewController.swift */; };
+		505DA6D72A484234004C43D8 /* NeedsRemovedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6CC2A484234004C43D8 /* NeedsRemovedViewController.swift */; };
+		505DA6D82A484234004C43D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6CD2A484234004C43D8 /* MainViewController.swift */; };
+		505DA6D92A484234004C43D8 /* UnwindSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6CE2A484234004C43D8 /* UnwindSegueViewController.swift */; };
+		505DA6DA2A484234004C43D8 /* CustomNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6CF2A484234004C43D8 /* CustomNavigationBarViewController.swift */; };
+		505DA6DB2A484234004C43D8 /* GradientNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DA6D02A484234004C43D8 /* GradientNavigationBarViewController.swift */; };
+		505DA6DE2A48433D004C43D8 /* SBNavigationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505DA6DD2A48433D004C43D8 /* SBNavigationController.framework */; };
+		505DA6E12A4846BF004C43D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505DA6DF2A4846BF004C43D8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		505DA6712A45D657004C43D8 /* SBNavigationController-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SBNavigationController-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		505DA6B62A484155004C43D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		505DA6B82A484155004C43D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		505DA6BA2A484155004C43D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		505DA6BB2A484155004C43D8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505DA6BC2A484155004C43D8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505DA6BD2A484155004C43D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		505DA6C62A484234004C43D8 /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		505DA6C72A484234004C43D8 /* HideNavigationBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideNavigationBarViewController.swift; sourceTree = "<group>"; };
+		505DA6C82A484234004C43D8 /* BasicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewController.swift; sourceTree = "<group>"; };
+		505DA6C92A484234004C43D8 /* BasicBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicBrowserViewController.swift; sourceTree = "<group>"; };
+		505DA6CA2A484234004C43D8 /* DisableInteractivePopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisableInteractivePopViewController.swift; sourceTree = "<group>"; };
+		505DA6CB2A484234004C43D8 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
+		505DA6CC2A484234004C43D8 /* NeedsRemovedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedsRemovedViewController.swift; sourceTree = "<group>"; };
+		505DA6CD2A484234004C43D8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		505DA6CE2A484234004C43D8 /* UnwindSegueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegueViewController.swift; sourceTree = "<group>"; };
+		505DA6CF2A484234004C43D8 /* CustomNavigationBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarViewController.swift; sourceTree = "<group>"; };
+		505DA6D02A484234004C43D8 /* GradientNavigationBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientNavigationBarViewController.swift; sourceTree = "<group>"; };
+		505DA6DD2A48433D004C43D8 /* SBNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SBNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		505DA6E02A4846BF004C43D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505DA6DE2A48433D004C43D8 /* SBNavigationController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +65,7 @@
 			children = (
 				505DA6732A45D657004C43D8 /* Demo */,
 				505DA6722A45D657004C43D8 /* Products */,
+				505DA6DC2A48433D004C43D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,13 +90,40 @@
 			children = (
 				505DA6BB2A484155004C43D8 /* AppDelegate.swift */,
 				505DA6BD2A484155004C43D8 /* SceneDelegate.swift */,
+				505DA6B72A484155004C43D8 /* LaunchScreen.storyboard */,
+				505DA6DF2A4846BF004C43D8 /* Main.storyboard */,
+				505DA6C52A4841FA004C43D8 /* ViewControllers */,
 				505DA6B62A484155004C43D8 /* Assets.xcassets */,
 				505DA6BC2A484155004C43D8 /* Info.plist */,
-				505DA6B72A484155004C43D8 /* LaunchScreen.storyboard */,
-				505DA6B92A484155004C43D8 /* Main.storyboard */,
 			);
 			name = "Spirit-Demo";
 			path = "Demo/Spirit-Demo";
+			sourceTree = "<group>";
+		};
+		505DA6C52A4841FA004C43D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				505DA6CD2A484234004C43D8 /* MainViewController.swift */,
+				505DA6C62A484234004C43D8 /* BasicViewController.swift */,
+				505DA6CB2A484234004C43D8 /* BasicCollectionViewController.swift */,
+				505DA6C82A484234004C43D8 /* BasicTableViewController.swift */,
+				505DA6C92A484234004C43D8 /* BasicBrowserViewController.swift */,
+				505DA6CF2A484234004C43D8 /* CustomNavigationBarViewController.swift */,
+				505DA6D02A484234004C43D8 /* GradientNavigationBarViewController.swift */,
+				505DA6C72A484234004C43D8 /* HideNavigationBarViewController.swift */,
+				505DA6CA2A484234004C43D8 /* DisableInteractivePopViewController.swift */,
+				505DA6CC2A484234004C43D8 /* NeedsRemovedViewController.swift */,
+				505DA6CE2A484234004C43D8 /* UnwindSegueViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		505DA6DC2A48433D004C43D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				505DA6DD2A48433D004C43D8 /* SBNavigationController.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505DA6C12A484155004C43D8 /* Main.storyboard in Resources */,
+				505DA6E12A4846BF004C43D8 /* Main.storyboard in Resources */,
 				505DA6BF2A484155004C43D8 /* Assets.xcassets in Resources */,
 				505DA6C02A484155004C43D8 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -146,7 +199,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				505DA6C22A484155004C43D8 /* AppDelegate.swift in Sources */,
+				505DA6D82A484234004C43D8 /* MainViewController.swift in Sources */,
+				505DA6D12A484234004C43D8 /* BasicViewController.swift in Sources */,
+				505DA6D42A484234004C43D8 /* BasicBrowserViewController.swift in Sources */,
+				505DA6D72A484234004C43D8 /* NeedsRemovedViewController.swift in Sources */,
+				505DA6D62A484234004C43D8 /* BasicCollectionViewController.swift in Sources */,
+				505DA6D92A484234004C43D8 /* UnwindSegueViewController.swift in Sources */,
+				505DA6D52A484234004C43D8 /* DisableInteractivePopViewController.swift in Sources */,
 				505DA6C42A484155004C43D8 /* SceneDelegate.swift in Sources */,
+				505DA6DB2A484234004C43D8 /* GradientNavigationBarViewController.swift in Sources */,
+				505DA6D32A484234004C43D8 /* BasicTableViewController.swift in Sources */,
+				505DA6DA2A484234004C43D8 /* CustomNavigationBarViewController.swift in Sources */,
+				505DA6D22A484234004C43D8 /* HideNavigationBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,10 +225,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		505DA6B92A484155004C43D8 /* Main.storyboard */ = {
+		505DA6DF2A4846BF004C43D8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				505DA6BA2A484155004C43D8 /* Base */,
+				505DA6E02A4846BF004C43D8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -222,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
