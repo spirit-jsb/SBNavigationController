@@ -157,12 +157,14 @@ open class SBNavigationController: UINavigationController {
         super.pushViewController(wrappedViewController, animated: animated)
     }
 
+    @discardableResult
     override public func popViewController(animated: Bool) -> UIViewController? {
         let poppedViewController = super.popViewController(animated: animated)
 
         return SBUnwrapViewController(poppedViewController)
     }
 
+    @discardableResult
     override public func popToViewController(_ viewController: UIViewController, animated: Bool) -> [UIViewController]? {
         let viewControllers = self.viewControllers
 
@@ -175,6 +177,7 @@ open class SBNavigationController: UINavigationController {
         return poppedViewControllers.flatMap { $0.map { SBUnwrapViewController($0)! } }
     }
 
+    @discardableResult
     override public func popToRootViewController(animated: Bool) -> [UIViewController]? {
         let poppedViewControllers = super.popToRootViewController(animated: animated)
 
@@ -205,6 +208,7 @@ open class SBNavigationController: UINavigationController {
         self.pushViewController(viewController, animated: animated)
     }
 
+    @discardableResult
     public func popViewController(animated: Bool, completion: @escaping CompletionCallback) -> UIViewController? {
         if self._completion != nil {
             self._completion!(false)
@@ -223,6 +227,7 @@ open class SBNavigationController: UINavigationController {
         return poppedViewController
     }
 
+    @discardableResult
     public func popToViewController(_ viewController: UIViewController, animated: Bool, completion: @escaping CompletionCallback) -> [UIViewController]? {
         if self._completion != nil {
             self._completion!(false)
@@ -241,6 +246,7 @@ open class SBNavigationController: UINavigationController {
         return poppedViewControllers
     }
 
+    @discardableResult
     public func popToRootViewController(animated: Bool, completion: @escaping CompletionCallback) -> [UIViewController]? {
         if self._completion != nil {
             self._completion!(false)
