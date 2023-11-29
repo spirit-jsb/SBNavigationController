@@ -1,8 +1,9 @@
 //
 //  SBNavigationControllerTests.swift
-//  SBNavigationControllerTests
 //
-//  Created by Max on 2023/6/23.
+//  Created by Max on 2023/7/5
+//
+//  Copyright © 2023 Max. All rights reserved.
 //
 
 @testable import SBNavigationController
