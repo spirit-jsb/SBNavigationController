@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name        = 'SBNavigationController'
-  s.version     = '1.0.2'
+  s.version     = '1.0.3'
   s.summary     = 'A lightweight and pure Swift implemented library for customizable navigation controller.'
 
   s.description = <<-DESC
