@@ -304,6 +304,8 @@ extension SBNavigationController: UINavigationControllerDelegate {
             if actualViewController.sb.disablesInteractivePop == nil {
                 actualViewController.sb.disablesInteractivePop = actualViewController.navigationItem.leftBarButtonItem != nil
             }
+
+            self.setLeftBarButtonItem(on: actualViewController)
         }
 
         if let delegate = self._delegate, delegate.responds(to: #selector(navigationController(_:willShow:animated:))) {
@@ -315,10 +317,6 @@ extension SBNavigationController: UINavigationControllerDelegate {
         SBNavigationController.attemptRotationToDeviceOrientation()
 
         let actualViewController = SBUnwrapViewController(viewController)!
-
-        if viewController != navigationController.viewControllers.first, actualViewController.isViewLoaded {
-            self.setLeftBarButtonItem(on: actualViewController)
-        }
 
         if let disablesInteractivePop = actualViewController.sb.disablesInteractivePop, disablesInteractivePop {
             self.interactivePopGestureRecognizer?.delegate = nil
