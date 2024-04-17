@@ -34,6 +34,9 @@ SBNavigationController
 ### Method
 * init(noWrappingRootViewController:)
 
+### 已知问题
+* iOS 14.0 及以上版本，调用 popToRootViewController(animated:) 方法返回跟视图控制器会意外出现 Back 按钮。
+
 ## 限制条件
 - iOS 11.0+
 - Swift 5.0+    
